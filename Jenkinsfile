@@ -48,8 +48,8 @@ pipeline {
             
             steps{
                 
-            sh "docker stop chatappcontainer"
-             sh "docker rm chatappcontainer"
+           // sh "docker stop chatappcontainer"
+            // sh "docker rm chatappcontainer"
                 sh "docker run -d --name chatappcontainer -p 8099:8080 chatapplicationimage:$BUILD_NUMBER"
             }
         }
