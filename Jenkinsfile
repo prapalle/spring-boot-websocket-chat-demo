@@ -57,7 +57,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/Raghugithub9/ChatApplicationTest.git'
+                git 'https://github.com/prapalle/ChatApplicationTest.git'
                 sh "mvn clean test"
                 
             }
